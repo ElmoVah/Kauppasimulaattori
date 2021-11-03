@@ -1,0 +1,23 @@
+<hibernate-configuration>
+	<session-factory>
+		<!-- Käytä MySQL-tietokantaa ja MariaDB-palvelinta -->
+		<property name="hibernate.dialect"> org.hibernate.dialect.MySQL5Dialect</property>
+
+		<!-- Yhteyden perustiedot: -->
+		<!-- ajuri, palvelimen IP-osoite:portti, tietokannan nimi, käyttäjätunnus, salasana -->
+		<property name="hibernate.connection.driver_class">org.mariadb.jdbc.Driver</property>
+		<property name="hibernate.connection.url">jdbc:mariadb://localhost:3306/simulaattori</property>
+		<property name="hibernate.connection.username">olso</property>
+		<property name="hibernate.connection.password">olso</property>
+
+		<!-- Ekalla kerralla create, ja sitten kun kanta olemassa validate -->
+		<property name="hbm2ddl.auto">validate</property>
+
+		<!-- kun true, kaiuttaa kaikki SQL-lauseet stdout:iin -->
+		<property name="show_sql">false</property>
+
+		<!-- Kirjaa tähän mallitason DTO-oliot, pakkausnimet mukaan -->
+		<mapping class="dao.SimulaationTulokset" />
+		<mapping class="dao.PalvelupisteenTulos" />
+	</session-factory>
+</hibernate-configuration>
