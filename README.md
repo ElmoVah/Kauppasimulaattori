@@ -9,6 +9,7 @@ Projektin framework-pakkauksen koodi on saatu opettajalta valmiina ja sitä on m
 [Kurssin edellyttämä dokumentointi](projektin_dokumentointi.pdf)<br>
 [Javadoc](https://users.metropolia.fi/~samihuo/Ohjelmointiprojektin%20javadoc/doc/)
 
+
 Projektin tekijät:
 [Elmo Vahvaselkä](https://github.com/ElmoVah)
 [Sami Huoppila](https://github.com/samihuo)
